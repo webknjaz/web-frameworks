@@ -1,0 +1,761 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/nim/httpbeast"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/node/restana"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/c/kore"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/clojure/coast"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: cargo
+  directory: "/rust/nickel"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:rust
+- package-ecosystem: cargo
+  directory: "/rust/iron"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:rust
+- package-ecosystem: cargo
+  directory: "/rust/actix-web"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:rust
+- package-ecosystem: cargo
+  directory: "/rust/gotham"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:rust
+  ignore:
+  - dependency-name: gotham
+    versions:
+    - 0.5.0
+- package-ecosystem: docker
+  directory: "/rust/nickel"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/cpp/evhtp"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/crystal/kemal"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: bundler
+  directory: "/ruby/rails"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+  ignore:
+  - dependency-name: rails
+    versions:
+    - 6.1.1
+    - 6.1.2
+- package-ecosystem: bundler
+  directory: "/ruby/grape"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+  ignore:
+  - dependency-name: grape
+    versions:
+    - 1.5.1
+    - 1.5.2
+- package-ecosystem: bundler
+  directory: "/ruby/flame"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+- package-ecosystem: bundler
+  directory: "/ruby/agoo"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+- package-ecosystem: bundler
+  directory: "/ruby/roda"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+  ignore:
+  - dependency-name: roda
+    versions:
+    - 3.40.0
+    - 3.41.0
+    - 3.42.0
+    - 3.43.0
+- package-ecosystem: bundler
+  directory: "/ruby/rack-routing"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+- package-ecosystem: bundler
+  directory: "/ruby/syro"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+  ignore:
+  - dependency-name: syro
+    versions:
+    - 3.2.0
+- package-ecosystem: bundler
+  directory: "/ruby/sinatra"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+- package-ecosystem: bundler
+  directory: "/ruby/camping"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+- package-ecosystem: bundler
+  directory: "/ruby/plezi"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+- package-ecosystem: bundler
+  directory: "/ruby/hanami"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+- package-ecosystem: bundler
+  directory: "/ruby/cuba"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:ruby
+- package-ecosystem: docker
+  directory: "/ruby/rails"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/scala/akkahttp"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: gomod
+  directory: "/go/gramework"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: gomod
+  directory: "/go/fasthttprouter"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: gomod
+  directory: "/go/gin"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+  ignore:
+  - dependency-name: github.com/gin-gonic/gin
+    versions:
+    - 1.6.3
+- package-ecosystem: gomod
+  directory: "/go/echo"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+  ignore:
+  - dependency-name: github.com/labstack/echo/v4
+    versions:
+    - 4.1.17
+    - 4.2.0
+    - 4.2.1
+- package-ecosystem: gomod
+  directory: "/go/chi"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: gomod
+  directory: "/go/air"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+  ignore:
+  - dependency-name: github.com/aofei/air
+    versions:
+    - 0.21.2
+    - 0.21.3
+- package-ecosystem: gomod
+  directory: "/go/gorouter"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: gomod
+  directory: "/go/kami"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: gomod
+  directory: "/go/goroute"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: gomod
+  directory: "/go/atreugo"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: gomod
+  directory: "/go/gorilla-mux"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: gomod
+  directory: "/go/violetear"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: gomod
+  directory: "/go/rte"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: gomod
+  directory: "/go/gorouter-fasthttp"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+  ignore:
+  - dependency-name: github.com/valyala/fasthttp
+    versions:
+    - 1.19.0
+    - 1.20.0
+    - 1.21.0
+    - 1.22.0
+- package-ecosystem: gomod
+  directory: "/go/gf"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+  ignore:
+  - dependency-name: github.com/gogf/gf
+    versions:
+    - 1.15.3
+    - 1.15.4
+    - 1.15.5
+- package-ecosystem: gomod
+  directory: "/go/beego"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:go
+- package-ecosystem: docker
+  directory: "/go/gramework"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/csharp/aspnetcore"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: composer
+  directory: "/php/imi"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+- package-ecosystem: composer
+  directory: "/php/swoft"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+- package-ecosystem: composer
+  directory: "/php/laravel"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+- package-ecosystem: composer
+  directory: "/php/lumen"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+  ignore:
+  - dependency-name: laravel/lumen-framework
+    versions:
+    - 8.2.2
+- package-ecosystem: composer
+  directory: "/php/slim"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+- package-ecosystem: composer
+  directory: "/php/hyperf"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+- package-ecosystem: composer
+  directory: "/php/zend-framework"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+- package-ecosystem: composer
+  directory: "/php/zend-expressive"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+- package-ecosystem: composer
+  directory: "/php/one"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+- package-ecosystem: composer
+  directory: "/php/symfony"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+- package-ecosystem: composer
+  directory: "/php/spiral"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:php
+  ignore:
+  - dependency-name: spiral/framework
+    versions:
+    - 2.7.4
+    - 2.7.5
+    - 2.7.6
+    - 2.7.7
+  - dependency-name: spiral/roadrunner
+    versions:
+    - 2.0.0
+- package-ecosystem: docker
+  directory: "/php/imi"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: pip
+  directory: "/python/responder"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/asgineer"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/quart"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/hug"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/blacksheep"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+  ignore:
+  - dependency-name: blacksheep
+    versions:
+    - 0.3.0
+- package-ecosystem: pip
+  directory: "/python/japronto"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/starlette"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/clastic"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/aiohttp"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/falcon"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/molten"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/flask"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/fastapi"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/django"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+  ignore:
+  - dependency-name: django
+    versions:
+    - 3.1.1
+- package-ecosystem: pip
+  directory: "/python/bocadillo"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/sanic"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+  ignore:
+  - dependency-name: sanic
+    versions:
+    - 20.3.0
+- package-ecosystem: pip
+  directory: "/python/bottle"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/masonite"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/tornado"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: pip
+  directory: "/python/cyclone"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:python
+- package-ecosystem: docker
+  directory: "/python/responder"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/kotlin/ktor"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: maven
+  directory: "/java/rapidoid"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:java
+- package-ecosystem: maven
+  directory: "/java/act"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:java
+- package-ecosystem: maven
+  directory: "/java/spring-boot"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:java
+- package-ecosystem: maven
+  directory: "/java/javalin"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - language:java
+- package-ecosystem: docker
+  directory: "/java/rapidoid"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/perl/dancer2"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/fsharp/suave"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
+- package-ecosystem: docker
+  directory: "/swift/perfect"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  labels:
+  - docker
